@@ -82,4 +82,6 @@ def main(page: ft.Page):
     
     page.add(header, ft.Container(height=15), bolge_dropdown, ft.Container(height=10), sos_container, tasks_container)
 
-ft.app(target=main)
+# Əsas dəyişiklik: APK yığılarkən bu kodun birbaşa çalışmaması üçün şərt qoyuruq
+if __name__ == "__main__":
+    ft.app(target=main)
