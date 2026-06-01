@@ -82,4 +82,4 @@ def main(page: ft.Page):
     
     page.add(header, ft.Container(height=15), bolge_dropdown, ft.Container(height=10), sos_container, tasks_container)
 
-ft.app(main)
+ft.app(target=main)
