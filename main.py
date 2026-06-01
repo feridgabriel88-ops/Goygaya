@@ -1,7 +1,4 @@
-İmport os
-
-# Möhübbət əminin Göy Qaya arıçılıq tətbiqinin bütöv kodu
-kod = """import flet as ft
+import flet as ft
 
 def main(page: ft.Page):
     page.title = "Göy Qaya - Ağıllı Arıçılıq Asistenti"
@@ -85,19 +82,4 @@ def main(page: ft.Page):
     
     page.add(header, ft.Container(height=15), bolge_dropdown, ft.Container(height=10), sos_container, tasks_container)
 
-if __name__ == "__main__":
-    ft.app(target=main)
-"""
-
-# Faylı yaradırıq
-with open("main.py", "w", encoding="utf-8") as f:
-    f.write(kod)
-
-print("\n" + "="*50)
-print("🚀 MÖHÜBBƏT ƏMİ, KOD UĞURLA YARANDI!")
-print("="*50)
-print("\n📱 İndi bu kodu Google Colab-a ehtiyac olmadan birbaşa")
-print("telefona quraşdırmaq və APK linkini almaq üçün bu sayta gir:")
-print("👉 https://expo.dev (və ya mənə de, sənə hazır link verim)")
-print("="*50)
-Pulsuz olsun
+ft.app(main)
